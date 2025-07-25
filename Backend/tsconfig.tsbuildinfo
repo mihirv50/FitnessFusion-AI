@@ -1,0 +1,1 @@
+{"root":["./src/db.ts","./src/index.ts","./src/middlewares/usermiddleware.ts","./src/routes/user.ts","./src/types/express/index.d.ts","./src/utils/gemini.ts"],"version":"5.8.3"}
