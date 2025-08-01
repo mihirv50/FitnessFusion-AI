@@ -9,12 +9,12 @@ import Working from "./pages/Working"
 const App = () => {
   return (
     <div className="w-screen h-screen text-[#a59a94] bg-[#000000] overflow-x-hidden">
-      {/* <Landing/>
+      <Landing/>
       <Features/>
       <Working/>
       <FrequentlyAsked/>
       <hr />
-      <Footer/> */}
+      <Footer/>
       {/* <Signup/> */}
       {/* <Signin/> */}
     </div>

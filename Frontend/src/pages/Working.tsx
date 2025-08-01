@@ -33,7 +33,7 @@ const Working = () => {
           </h1>
           <div className="w-[60vw] h-[60vh] bg-transparent flex flex-col gap-5 items-center p-4">
             {working.map((w) => (
-              <div key={w.id} className="w-full rounded-xl h-64 text-[#E7EFE6] flex items-center flex-col justify-center gap-10 bg-[#5D86AC] p-3">
+              <div key={w.id} className="w-full rounded-lg h-64 text-[#E7EFE6] flex items-center flex-col justify-center gap-10 bg-[#3c3c3c] p-3">
                 <h1 className="font-bold text-xl">{w.title}</h1>
                 <p className="font-semibold text-lg">{w.desc}</p>
               </div>

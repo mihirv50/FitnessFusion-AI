@@ -30,7 +30,7 @@ const FrequentlyAsked = () => {
       <div className="w-screen h-screen text-[#E7EFE6] flex items-center flex-col gap-10">
         <h1 className="text-2xl font-bold">FAQ</h1>
         {faq.map((f) => (
-          <div className="bg-[#13315C] rounded w-[50vw] h-[13vh] p-4">
+          <div className="bg-[#3c3c3c] rounded-lg w-[50vw] h-[13vh] p-4">
             <h3 className="text-xl font-semibold">Q. {f.ques}</h3>
             <p className="text-lg font-light">{f.answer}</p>
           </div>

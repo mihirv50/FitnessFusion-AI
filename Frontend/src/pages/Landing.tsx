@@ -13,7 +13,7 @@ const Landing = () => {
 
         </div>
         <div className="text-center mt-4 text-[#E7EFE6]">
-          <Button className="py-6 px-12 bg-[#8DA9C4]" variant="default" size="xl">Get Started Now</Button>
+          <Button className="py-6 px-12 bg-[#182838] hover:bg-[#3c3c3c]" variant="default" size="xl">Get Started Now</Button>
         </div>
     </div>
   )

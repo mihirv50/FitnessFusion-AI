@@ -32,7 +32,7 @@ const Card = () => {
   return (
     <>
       {cardContent.map((c) => {
-        return <div key={c.id} className="w-80 h-92 p-5 text-gray-800 bg-[#E7EFE6] rounded-xl flex flex-col items-center justify-start gap-20">
+        return <div key={c.id} className="w-80 h-92 p-5 text-[#E7EFE6] bg-[#4d4d4d] rounded-xl flex flex-col items-center justify-start gap-20">
           <h1 className="text-xl font-bold">{c.title}</h1>
           <p className="text-md font-medium">{c.desc}</p>
         </div>;
