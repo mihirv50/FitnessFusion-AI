@@ -1,17 +1,19 @@
 import type { HTMLInputTypeAttribute } from "react"
+import type {  UseFormRegister, Path, FieldValues } from "react-hook-form"
 
-interface InputI {
+
+interface InputProps<T extends FieldValues> {
     placeholder?: string,
     type?: HTMLInputTypeAttribute | undefined,
-    ref?: any,
-    onChange?: ()=>void,
-    className?: string
+    name: Path<T>
+    className?: string,
+    register: UseFormRegister<T>
 }
 
-const Input = (props: InputI) => {
+const Input = <T extends FieldValues>({ placeholder, type, className, name, register }: InputProps<T>) => {
   return (
     <>
-      <input className={props.className} ref={props.ref} placeholder={props.placeholder}  type={props.type} />
+      <input {...register(name)} className={className} placeholder={placeholder}  type={type} />
     </>
   )
 }

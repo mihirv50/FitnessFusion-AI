@@ -1,5 +1,10 @@
+import  Features  from "./Features"
 import Nav from "../Components/Nav"
 import { Button } from "../Components/ui/Button"
+import Working from "./Working"
+import FrequentlyAsked from "./FrequentlyAsked"
+import Footer from "@/Components/Footer"
+import { Link } from "react-router-dom"
 
 const Landing = () => {
   return (
@@ -12,9 +17,16 @@ const Landing = () => {
             </div>
 
         </div>
-        <div className="text-center mt-4 text-[#E7EFE6]">
+        <div className="text-center mt-4 text-[#E7EFE6] mb-[30vh]">
+          <Link to="/signup">
           <Button className="py-6 px-12 bg-[#182838] hover:bg-[#3c3c3c]" variant="default" size="xl">Get Started Now</Button>
+          </Link>
         </div>
+      <Features/>
+      <Working/>
+      <FrequentlyAsked/>
+      <hr />
+      <Footer/>
     </div>
   )
 }
